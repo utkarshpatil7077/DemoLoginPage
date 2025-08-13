@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberQRScan - Sign Up</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .signup-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        backdrop-filter: blur(8px);
+        width: 90%;
+        max-width: 350px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .signup-box h2 {
+        margin-bottom: 15px;
+        color: #00ffcc;
+    }
+
+    .signup-box img {
+        width: 70px;
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background: rgba(255,255,255,0.2);
+        color: white;
+        font-size: 1rem;
+    }
+
+    input::placeholder {
+        color: #ccc;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        background: #00ffcc;
+        color: #000;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00cc99;
+    }
+
+    .login-link {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    .login-link a {
+        color: #00ffcc;
+        text-decoration: none;
+    }
+
+    .login-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="signup-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/726/726623.png" alt="QR Logo">
+    <h2>CyberQRScan Sign Up</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+        Already have an account? <a href="LoginInfo.html">Login</a>
+    </div>
+</div>
+
+</body>
+</html>
