@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #0078d7;
+      color: white;
+      text-align: center;
+      padding: 1.2rem;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      background: #0078d7;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    button {
+      background-color: #0078d7;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005ea6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Simple Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Hello, I'm Utkarsh!</h2>
+    <p>This is a simple demo website built with HTML, CSS, and JavaScript.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="output" style="margin-top: 20px; font-weight: bold;"></p>
+  </main>
+
+  <footer>
+    &copy; 2025 My Simple Website | Created by Utkarsh
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("output").innerText = "Thanks for visiting!";
+    }
+  </script>
+
+</body>
+</html>
